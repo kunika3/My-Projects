@@ -1,4 +1,5 @@
 //Simple To-Do List
+//Javascript DOM
 
 
 var taskInput = document.getElementById("new-task"); //new-task
