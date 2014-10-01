@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style type="text/css">
+        body{
+        background: #F0F0F0;
+        height: 90%;
+        width:90%;
+        }
+        
+        #div0{
+            margin: 10px 20px;
+        }
+        
+        p{
+        color:black;
+        font-size:20px;
+        font-family:"Arial Black", Gadget, sans-serif;
+        }
+        
+        #div1{
+            height:200px;
+            border-left: 2px solid black;
+            font-family: Helvetica, Arial, Sans-Serif;
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        /**Div created & appended by Javascript**/
+        .div2{      
+            background-color: steelblue;
+            width: 0px;
+            height: 30px;
+            margin-top:0px;
+            }    
+    </style>
+</head>
+<body>
+    <div id="div0"><p>Bar Graph for Car's MPG</p></div>
+    <div id="div1"></div>  
+    <script type='text/javascript'>
+        var cars = [{
+            class: "Two-Seaters",
+            name: "Honda CR-Z",
+            mpg: 37
+        },{
+            class: "Minicompacts",
+            name: "Scion iQ",
+            mpg: 37
+        },{
+            class: "Compacts",
+            name: "Toyota Prius",
+            mpg: 50
+        },{
+            class: "Large",
+            name: "Ford C-MAX Hybrid",
+            mpg: 43
+        },{   
+            class: "Small Station Wagons",
+            name: "BMW 328d xDrive Sports Wagon",
+            mpg: 35
+            
+                
+        }]
+
+        var container= document.getElementsByTagName('div')[1];
+        for(var i=0;i<cars.length;i++)
+            {
+                var divs= document.createElement("div");
+                divs.className='div2';
+                divs.style.width= parseInt(cars[i].mpg*10)+"px";                                                    
+                if(cars.length>10)   // Executes when the array length is more than 10
+                    {
+                        container.style.height=500+"px" ;
+                        divs.style.marginTop= Math.floor(100/cars.length)+"px";
+                        divs.style.height= Math.floor((500/(cars.length))-100/cars.length)+"px";
+                    }
+                else  // Executes when the array length is less than 10
+                    {   
+                        container.style.height= parseInt(cars.length*40)+"px";                
+                        divs.style.height= parseInt(30)+"px";
+                        divs.style.marginTop=50/(cars.length)+"px";
+                        
+                    }
+                divs.innerText= cars[i].name;
+                container.appendChild(divs);              
+            } 
+    </script>    
+</body>
+</html>

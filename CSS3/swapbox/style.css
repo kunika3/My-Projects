@@ -1,0 +1,16 @@
+div.box1{
+        width:100px; 
+        height: 100px; 
+        background:red; 
+        text-align: centre; 
+        float: left; 
+        margin: 0 5px;
+    }
+ 
+.box2{
+    width:100px; 
+    height: 100px; 
+    background:blue; 
+    text-align: center; 
+    float: left;
+ }

@@ -1,0 +1,325 @@
+body{
+	background:url("http://imagesci.com/img/2013/12/space-background-2630-hd-wallpapers.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow:hidden;
+
+}
+
+ul{
+	list-style: none;
+}
+
+ul.solarsystem li{
+	display:block;
+	position: absolute;
+	text-indent: 500px;
+}
+
+ul.solarsystem li span{
+	display: block;
+	position: absolute;
+	width:10px;
+	height:10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 50%;
+
+}
+
+
+
+#hov_sun, #hov_mercury, #hov_venus, #hov_earth, #hov_mars, #hov_jupitor, #hov_saturn, #hov_uranus, #hov_neptune{
+
+	float: right;
+	text-decoration: none;
+	color: white;
+}
+
+#hov_sun{
+	margin-right: 400px;
+	margin-top: 130px;
+}
+
+#hov_mercury{
+	margin-right: -40px;
+	margin-top: 150px;
+}
+
+#hov_venus{
+	margin-right: -40px;
+	margin-top: 170px;
+}
+
+#hov_earth{
+	margin-right: -40px;
+	margin-top: 190px;
+}
+
+#hov_mars{
+	margin-right: -40px;
+	margin-top: 210px;
+}
+
+#hov_jupitor{
+	margin-right: -40px;
+	margin-top: 230px;
+}
+
+#hov_saturn{
+	margin-right: -40px;
+	margin-top: 250px;
+}
+
+#hov_uranus{
+	margin-right: -40px;
+	margin-top: 270px;
+}
+
+#hov_neptune{
+	margin-right: -50px;
+	margin-top: 290px;
+}
+
+#hov_sun:hover ~ li.sun{
+	-webkit-box-shadow: 0px 0px 70px red;
+}
+
+#hov_mercury:hover ~ li.mercury, #hov_venus:hover ~ li.venus, #hov_earth:hover ~ li.earth, #hov_mars:hover ~ li.mars, #hov_jupitor:hover ~ li.jupitor, #hov_saturn:hover ~ li.saturn, #hov_uranus:hover ~ li.uranus, #hov_neptune:hover ~ li.neptune{
+	border-color: red;
+ 
+}
+
+
+
+li.sun{
+	border: none;
+	width: 40px;
+    height: 40px;
+    border-color: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    top: 270px;
+    left:470px;
+    /* Making Sun with gradient*/
+    background: #fefcea; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefcea 1%, #f1da36 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefcea 1%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefcea 1%,#f1da36 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefcea 1%,#f1da36 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefcea 1%,#f1da36 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+ 	-webkit-box-shadow: 0px 0px 50px yellow;      
+}
+
+
+
+
+li.mercury{
+	width: 100px;
+	height:100px;
+    border: 2px solid #394057;
+
+	-webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    border-radius: 52px;
+    top:240px;
+    left:440px;
+    z-index:99;
+
+}
+
+li.mercury span{
+    	background: #b6bac5;
+    	border: none;
+    	border-color: none;
+    	text-decoration: none;
+    	top: 10px;
+    	left: 10px;
+
+    }
+
+
+li.venus{
+	width: 140px;
+	height:140px;
+	border: 2px solid #394057;
+
+	-webkit-border-radius: 82px;
+    -moz-border-radius: 82px;
+    border-radius: 82px;
+    top: 220px;
+    left: 420px;
+    z-index:98;
+}
+
+li.venus span{
+    	background: #E9AB17;
+    	
+    	top: 13px;
+    	left: 13px;
+    }
+
+.earth{
+	width: 180px;
+	height:180px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 112px;
+    -moz-border-radius: 112px;
+    border-radius: 112px;
+    top: 200px;
+    left: 400px;
+    z-index:97;
+}
+
+li.earth span{
+    	background: #2B65EC;
+    	
+    	top: 18px;
+    	left: 18px;
+    }
+
+.mars{
+	width: 220px;
+	height:220px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 142px;
+    -moz-border-radius: 142px;
+    border-radius: 142px;
+    top: 180px;
+    left: 380px;
+    z-index:96;
+}
+
+li.mars span{
+    	background: #7F462C;
+    	
+    	top: 24px;
+    	left: 24px;
+    }
+
+
+.jupitor{
+	width: 260px;
+	height:260px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 172px;
+    -moz-border-radius: 172px;
+    border-radius: 172px;
+    top: 160px;
+    left: 360px;
+    z-index:95;
+}
+
+li.jupitor span{
+    	background: #806517;
+    	
+    	top: 30px;
+    	left: 30px;
+    }
+
+.saturn{
+	width: 300px;
+	height:300px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 202px;
+    -moz-border-radius: 202px;
+    border-radius: 202px;
+    top: 140px;
+    left: 340px;
+    z-index:94;
+}
+
+li.saturn span{
+    	background: #D4A017;
+    	
+    	top: 36px;
+    	left: 36px;
+ }
+
+.uranus{
+	width: 340px;
+	height:340px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 232px;
+    -moz-border-radius: 232px;
+    border-radius: 232px;
+    top: 120px;
+    left: 320px;
+    z-index:93;
+}
+
+li.uranus span{
+    	background: #6495ED;
+    	
+    	top: 42px;
+    	left: 42px;
+    }
+
+.neptune{
+	width: 380px;
+	height:380px;
+	border: 2px solid #394057;
+	-webkit-border-radius: 262px;
+    -moz-border-radius: 262px;
+    border-radius: 262px;
+    top: 100px;
+    left: 300px;
+    z-index:92;
+}
+
+li.neptune span{
+    	background: #95B9C7;
+    	
+    	top: 50px;
+    	left: 50px;
+    	
+
+    }
+
+
+ul.solarsystem li{
+	-webkit-animation: orbit infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+ul.solarsystem li.mercury{
+	-webkit-animation-duration: 5s;
+}
+
+ul.solarsystem li.venus{
+	-webkit-animation-duration: 10s;
+}
+
+ul.solarsystem li.earth{
+	-webkit-animation-duration: 15s;
+}
+
+ul.solarsystem li.mars{
+	-webkit-animation-duration: 20s;
+}
+
+ul.solarsystem li.jupitor{
+	-webkit-animation-duration: 15s;
+}
+
+ul.solarsystem li.saturn{
+	-webkit-animation-duration: 20s;
+}
+
+ul.solarsystem li.uranus{
+	-webkit-animation-duration: 25s;
+}
+
+ul.solarsystem li.neptune{
+	-webkit-animation-duration: 30s;
+}
+
+/*Animations*/
+
+@-webkit-keyframes orbit{
+	0%{-webkit-transform:rotate(20deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
